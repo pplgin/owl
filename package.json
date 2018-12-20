@@ -12,7 +12,7 @@
     "nodeframework"
   ],
   "author": "pplgin",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "debug": "^4.1.0",
     "eslint": "^5.9.0",
@@ -36,6 +36,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.yeshj.com:cctalk-front-end/node-framework.git"
-  }
+    "url": "git+https://github.com/pplgin/owl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pplgin/owl/issues"
+  },
+  "homepage": "https://github.com/pplgin/owl#readme"
 }
