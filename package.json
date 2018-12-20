@@ -1,0 +1,41 @@
+{
+  "name": "@pplgin/owl",
+  "version": "0.0.1",
+  "description": "Owl-Node框架",
+  "main": "lib/owl.js",
+  "scripts": {
+    "test": "jest test/"
+  },
+  "keywords": [
+    "nodejs",
+    "koa",
+    "nodeframework"
+  ],
+  "author": "pplgin",
+  "license": "ISC",
+  "devDependencies": {
+    "debug": "^4.1.0",
+    "eslint": "^5.9.0",
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "ip": "^1.1.5",
+    "is-type-of": "^1.2.1",
+    "koa": "^2.6.2",
+    "koa-compose": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "log4js": "^3.0.6",
+    "nanoid": "^2.0.0",
+    "nunjucks": "^3.1.4",
+    "url": "^0.11.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.yeshj.com:cctalk-front-end/node-framework.git"
+  }
+}
