@@ -8,7 +8,7 @@ declare module Owl {
     /**
      * request context
      */
-    ctx: Context;
+    ctx: Koa.Context;
 
     /**
      * Application
