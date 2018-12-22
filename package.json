@@ -1,6 +1,6 @@
 {
   "name": "@pplgin/owl",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Owl-Node框架",
   "main": "lib/owl.js",
   "scripts": {
