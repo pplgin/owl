@@ -9,21 +9,43 @@
 - Logger 日志集成
 - Router 集成
 
-### 使用方式
+## 使用方式
 
-环境要求： node >=9
+环境依赖： node >=9
+
+```
+npm install @pplgin/owl
+```
+
+
+## Example
+
+代码目录结构
+
+```
+├── app.js
+├── config.js
+├── controller
+├── middleware
+├── model
+├── model.js
+├── router
+├── service
+└── views
+```
+
 
 引入owl(具体事例可以参考app文件夹)
 
-```
+```javascript
 const path = require('path')
-const { OwlApplication } = require('../lib/owl.js')
-const { pkg, logFilePath } = require('./config')
+const { OwlApplication } = require('@pplgin/owl')
+const { pkg, logConfig } = require('./config')
 const app = new OwlApplication({
 	pkg,
-	logFilePath,
 	rootPath:__dirname,
-  viewRoot: path.join(__dirname, 'views'),
+    viewRoot: path.join(__dirname, 'views'),
+    logConfig
 })
 // 启动
 app.bootstrap()
@@ -31,8 +53,8 @@ app.bootstrap()
 
 controller层
 
-```
-const { Controller } = require('../../lib/owl')
+```javascript
+const { Controller } = require('@pplgin/owl')
 module.exports = class Home extends Controller {
 	test() {
 		// this.ctx.coreLogger.info('111')
@@ -47,10 +69,10 @@ module.exports = class Home extends Controller {
 }
 ```
 
-service 层
+service层
 
-```
-const { Service } = require('../../lib/owl')
+```javascript
+const { Service } = require('@pplgin/owl')
 
 module.exports = class NewsService extends Service {
   list(page = 1) {

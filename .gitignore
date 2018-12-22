@@ -1,7 +1,6 @@
 .DS_Store
 .idea/
 .vscode
-app
 node_modules
 logs/*
 package-lock.json
