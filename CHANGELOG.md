@@ -1,3 +1,10 @@
+## [0.0.3]-2018-12-28
+
+### Bugfix
+- 修复日志header 过滤key前后空格导致过滤失败
+- 修复日志s_headers字段为 ctx.response.headers
+
+
 ## [0.0.2]-2018-12-22
 
 ### Added

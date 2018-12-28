@@ -28,7 +28,6 @@ npm install @pplgin/owl
 ├── controller
 ├── middleware
 ├── model
-├── model.js
 ├── router
 ├── service
 └── views
@@ -50,6 +49,14 @@ const app = new OwlApplication({
 // 启动
 app.bootstrap()
 ```
+
+middleware
+```javascript
+module.exports = [
+    logger, //[logger, { options }]
+]
+```
+
 
 controller层
 
