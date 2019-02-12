@@ -59,6 +59,7 @@ declare module Owl {
     method?: string;
     data?: any;
     headers?: any;
+    timeout?: number;
   }
 
   export interface IContext extends Koa.Context {
@@ -72,11 +73,12 @@ declare module Owl {
    * owlconfig
    */
   export interface IOwlConfig {
-    pkg: string,
+    pkg: string;
     rootPath: string;
-    viewRoot: string,
-    PORT: number,
-    logConfig: ILogConfig,
+    viewRoot: string;
+    PORT: number;
+    logConfig: ILogConfig;
+    fetchTimeout?: number;
   }
 
   export class OwlApplcation extends Koa {

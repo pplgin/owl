@@ -2,13 +2,18 @@ const { Service } = require('../../../lib/owl')
 
 module.exports = class NewsService extends Service {
   async list(page = 1) {
-    // console.log('xx', JSON.stringify(this.ctx))
-    // const res = await this.ctx.fetch({
-    //   url: 'http://www.baidu.com'
-    // })
-    return {
-      id: 1,
-      contest: 'test'
+    try {
+      const res = await this.ctx.fetch({
+        url: 'http://0.0.0.0:3200/test',
+        // timeout: 5000
+      })
+      console.log('res', res)
+      return {
+        id: 1,
+        contest: 'test'
+      }
+    } catch (error) {
+      throw error
     }
   }
 }

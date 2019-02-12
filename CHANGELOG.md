@@ -1,3 +1,9 @@
+## [0.0.5]-2019-2-12
+
+### Features
+- node请求添加超时配置 `fetchTimeout`
+- web访问日志添加 node处理耗时时间字段 `time_taken`, `ctx.log.access(responseTime)`
+
 ## [0.0.4]-2018-12-28
 
 ### Bugfix

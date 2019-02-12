@@ -1,13 +1,11 @@
 const path = require('path')
 const { OwlApplication } = require('../lib/owl')
 
-const { pkg, logConfig, PORT } = require('./config')
+const config = require('./config')
 
 
 const app = new OwlApplication({
-	pkg,
-	logConfig,
-	PORT,
+	...config,
 	rootPath: __dirname,
   viewRoot: path.join(__dirname, 'views'),
 })

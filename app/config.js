@@ -14,5 +14,6 @@ module.exports = {
 		logFilePath: LOG_FILE_PATH,
 		pm2: true,
 		filterHeaders: []
-	}
+	},
+	fetchTimeout: 2000 // 超时时间
 }

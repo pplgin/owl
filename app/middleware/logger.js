@@ -4,7 +4,7 @@
  */
 module.exports = () => (ctx, next) => {
 	return next().then(() => {
-		ctx.log.access() // 访问日志
+		ctx.log.access(1) // 访问日志
 		switch (ctx.status) {
 			case 404:
 				break;
