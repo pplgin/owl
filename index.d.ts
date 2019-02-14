@@ -79,6 +79,7 @@ declare module Owl {
     PORT: number;
     logConfig: ILogConfig;
     fetchTimeout?: number;
+    apiTraceKey?: string;
   }
 
   export class OwlApplcation extends Koa {

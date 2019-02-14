@@ -1,3 +1,10 @@
+## [0.0.6]-2019-2-14
+
+### Features
+- 启动配置，添加 `apiTraceKey` 字段追踪 fetch请求记录耗时情况
+- web访问日志添加 fetch api 请求时间记录 `time_third_api`
+
+
 ## [0.0.5]-2019-2-12
 
 ### Features

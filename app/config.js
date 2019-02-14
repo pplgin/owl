@@ -15,5 +15,6 @@ module.exports = {
 		pm2: true,
 		filterHeaders: []
 	},
-	fetchTimeout: 2000 // 超时时间
+	fetchTimeout: 2000, // 超时时间
+	apiTraceKey: 'APIPerformance'
 }
